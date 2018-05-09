@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_et"
+            android:background="@drawable/background_layout_item_mat"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/img_item_et"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textColor="@color/titleTextColor"
+                android:padding="@dimen/nav_header_vertical_spacing"
+                android:gravity="center"
+                android:id="@+id/txt_item_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/titleTextColor"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/item_et1"
+            android:background="@drawable/background_layout_item_mat"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/img_item_et1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textColor="@color/titleTextColor"
+                android:padding="@dimen/nav_header_vertical_spacing"
+                android:gravity="center"
+                android:id="@+id/txt_item_et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/titleTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

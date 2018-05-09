@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mow"
+            android:icon="@drawable/dinner"
+            android:title="Thực đơn tuần này"/>
+
+        <item
+            android:id="@+id/nav_mat"
+            android:icon="@drawable/cardiogram"
+            android:title="Thành phần dinh dưỡng"/>
+
+        <item
+            android:id="@+id/nav_eat"
+            android:icon="@drawable/sweet_cake_piece"
+            android:title="Món ngon"/>
+
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/heart"
+            android:title="Yêu thích"/>
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/users"
+            android:title="Cá nhân"/>
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/folded_newspaper"
+            android:title="Tin tức"/>
+
+        <item
+            android:id="@+id/nav_noti"
+            android:icon="@drawable/turn_notifications_on_button"
+            android:title="Thông báo"/>
+    </group>
+
+</menu>

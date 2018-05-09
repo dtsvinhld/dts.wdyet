@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.com.dtsgroup.wdyet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Main.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.Main.MaterialofDayActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Eatings.EatingActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Eatings.MaterialActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Eatings.EatingTypeActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Eatings.EatingsActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Profile.Account.LoginActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Profile.Account.RegisterActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Profile.Account.ChangeFNActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Profile.Account.ChangePwActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Profile.Account.SafeActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.News.NewsActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.News.WebViewActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Result.ResultActivity"
+            android:theme="@style/ThemeName" />
+
+        <service android:name=".Service.NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activities.Profile.ProfileActivity"
+            android:theme="@style/ThemeName" />
+        <activity
+            android:name=".Activities.Rating.RatingActivity"
+            android:theme="@style/ThemeName" />
+        <activity android:name=".Activities.Profile.Account.ForgetActivity"
+            android:theme="@style/ThemeName" />
+    </application>
+
+</manifest>

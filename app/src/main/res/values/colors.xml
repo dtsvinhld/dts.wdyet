@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#fc7106</color>
+
+    <color name="itemTextColor">#4e4e4e</color>
+    <color name="titleTextColor">#333333</color>
+
+    <color name="layoutUMColor">#DDDDDD</color>
+    <color name="itemUMColor">#888888</color>
+
+    <color name="gray">#EEEEEE</color>
+
+    <color name="red">#FF0000</color>
+    <color name="blue">#00FF00</color>
+</resources>

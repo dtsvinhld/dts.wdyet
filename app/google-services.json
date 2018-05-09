@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "109635826645",
+    "firebase_url": "https://wdyet-695dc.firebaseio.com",
+    "project_id": "wdyet-695dc",
+    "storage_bucket": "wdyet-695dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109635826645:android:1b3cf48fc9872219",
+        "android_client_info": {
+          "package_name": "vn.com.dtsgroup.wdyet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109635826645-ed7nf0hb1q2sk81uflm74i56o7t347q6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO--5RQojQu7x8eUNQ4PHV7ejVIWyuqk0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="@dimen/fab_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.com.dtsgroup.wdyet.Activities.Profile.Account.ForgetActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_sendCode"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/fab_margin"
+            android:text="Nhập email mà bạn đã đăng ký"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:inputType="textEmailAddress"
+            android:hint="email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_send_fg"
+            android:text="Gửi"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            android:background="@drawable/background_layout_swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_continue"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/fab_margin"
+            android:text="Một mã xác nhận đã được gửi đến email của bạn.\nNhập mã xác nhận để tiếp tục"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edt_code_fg"
+            android:hint="Mã xác nhận"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_continue_fg"
+            android:text="Tiếp tục"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            android:background="@drawable/background_layout_swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_newPassword"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/fab_margin"
+            android:text="Nhập mật khẩu mới"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/edt_pw_fg"
+            android:hint="Mật khẩu mới"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/edt_pw1_fg"
+            android:hint="Nhập lại mật khẩu mới"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_save_fg"
+            android:text="Lưu"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            android:background="@drawable/background_layout_swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

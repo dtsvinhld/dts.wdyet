@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.com.dtsgroup.wdyet.Activities.Rating.RatingActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_rating"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="@dimen/fab_margin"
+            android:text="Xếp hạng món ăn này"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingBar"
+            android:progressDrawable="@drawable/rating_bar"
+            android:rating="0"
+            android:stepSize="1"
+            android:isIndicator="false"
+            android:max="5"
+            android:min="1"
+            android:layout_gravity="center"
+            android:progressTint="@color/colorAccent"
+            android:progressBackgroundTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/txt_rating"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="OK"
+            android:padding="@dimen/nav_header_vertical_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_rating"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:hint="Bình luận"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/btn_addComment"
+                    android:textAllCaps="false"
+                    android:text="Thêm bình luận"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/btn_rate"
+                    android:text="Đánh giá"
+                    android:background="@drawable/background_layout_swap"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_after_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="@dimen/nav_header_vertical_spacing"
+            android:text="Cảm ơn bạn đã đóng góp đánh giá cho món ăn này"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_rateAgain"
+            android:background="@drawable/background_layout_swap"
+            android:paddingRight="@dimen/nav_header_vertical_spacing"
+            android:paddingLeft="@dimen/nav_header_vertical_spacing"
+            android:textAllCaps="false"
+            android:text="Đánh giá lại"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <ListView
+        android:id="@+id/lv_rating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

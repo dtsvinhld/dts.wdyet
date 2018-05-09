@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:textSize="@dimen/textSize_child"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/fab_margin"
+        android:text="Bạn nấu ăn bữa nào trong ngày"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cb00"
+            android:layout_weight="1"
+            android:text="Bữa sáng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb01"
+            android:layout_weight="1"
+            android:text="Bữa trưa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb02"
+            android:layout_weight="1"
+            android:text="Bữa tối"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:textSize="@dimen/textSize_child"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/fab_margin"
+        android:text="Bạn nấu ăn ngày nào trong tuần"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cb10"
+            android:layout_weight="1"
+            android:text="T2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb11"
+            android:layout_weight="1"
+            android:text="T3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb12"
+            android:layout_weight="1"
+            android:text="T4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb13"
+            android:layout_weight="1"
+            android:text="T5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb14"
+            android:layout_weight="1"
+            android:text="T6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb15"
+            android:layout_weight="1"
+            android:text="T7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb16"
+            android:layout_weight="1"
+            android:text="CN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

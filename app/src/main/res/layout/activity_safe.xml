@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.com.dtsgroup.wdyet.Activities.Profile.Account.SafeActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_add_email"
+        android:orientation="vertical"
+        android:padding="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:paddingBottom="@dimen/nav_header_vertical_spacing"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="Thêm một Email cho tài khoản của bạn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_add_email"
+            android:inputType="textEmailAddress"
+            android:hint="email@email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_add_email"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:text="Thêm"
+            android:background="@drawable/background_layout_swap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/fab_margin"
+        android:paddingBottom="@dimen/fab_margin"
+        android:orientation="vertical"
+        android:id="@+id/layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/fab_margin"
+                android:gravity="center_vertical"
+                android:id="@+id/txt_email"
+                android:layout_weight="1"
+                android:text="email@email.email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/btn_activate"
+                android:textStyle="italic"
+                android:text="Xác nhận"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/background_layout_swap"
+                android:padding="@dimen/fab_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textStyle="italic"
+                android:gravity="center"
+                android:padding="@dimen/fab_margin"
+                android:id="@+id/btn_changeEmail"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/background_layout_swap"
+                android:textAllCaps="false"
+                android:text="Chỉnh sửa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_activate"
+            android:padding="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/edt_code"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_weight="1"
+                android:hint="Mã xác nhận"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/btn_activated"
+                android:textStyle="italic"
+                android:textColor="@color/blue"
+                android:background="@drawable/background_layout_swap"
+                android:text="Xác nhận"
+                android:padding="@dimen/fab_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:text="Thay đổi đã được lưu lại"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/fab_margin"
+            android:id="@+id/txt_noti_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
